@@ -6,12 +6,12 @@ rollback;
 
 # USER LOING PAGE
 create table USER(
-	User_Id int NOT NULL AUTO_INCREMENT,
+	User_Id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	Fname varchar(50) NOT NULL,
 	Lname varchar(50) NOT NULL,
     Email varchar(100) not null unique,
 	Password varchar(50) NOT NULL,
-	PRIMARY KEY (`User_Id`)
+	
 );
 desc USER;
 
