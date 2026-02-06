@@ -164,12 +164,11 @@ create table OWNER(
 	Fname varchar(15) NOT NULL,
 	Lname varchar(15) NOT NULL,
 	Contact varchar(100) NOT NULL,
-	Rest_Name varchar(100) NOT NULL,
-	PRIMARY KEY (`Fname`,`Lname`,`Contact`));
+	Rest_Name varchar(100) NOT NULL);
     desc OWNER;
     
 -- INSERT RESTAURANT OWENET DEDAILS
-insert into `OWNER`(`Fname`,`Lname`,`Contact`,`Rest_Name`)values
+insert into OWNER(Fname,Lname,Contact,Rest_Name)values
 ("sekar","muniyandi","894056438","valli_restaurant");
 select*from OWNER;
 
